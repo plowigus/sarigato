@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
+:root {
+  --first: #222426;
+  --secondary: #98465f;
+  --third: #f0f5f9;
+  --additional: #a28c91;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-y: hidden;
+}
+
+header {
+  position: clip;
+  background-color: var(--first);
+  border-bottom: 1px solid var(--secondary);
+}
+header .navbar-nav .nav-link {
+  color: var(--third);
+  transition: 0.5s;
+  margin: 0 10px;
+}
+header .navbar-nav .nav-link:hover {
+  color: var(--secondary);
+}
+header .navbar-nav a.active {
+  color: var(--secondary) !important;
+  font-weight: 500;
+}
+
+.hero-wrapper {
+  height: 100vh;
+}
+.hero-wrapper .btn-outline-primary {
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  transition: 0.3s;
+  margin-top: 20px;
+  --bs-btn-padding-x: 3rem;
+}
+.hero-wrapper .btn-outline-primary a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+.hero-wrapper .btn-outline-primary:hover {
+  color: var(--third);
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  letter-spacing: 3px;
+}
+.hero-wrapper .btn-outline-primary:hover a {
+  color: var(--third);
+}
+.hero-wrapper .btn-outline-primary:focus-visible {
+  color: var(--third);
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  letter-spacing: 3px;
+}
+.hero-wrapper .btn-outline-primary:focus-visible a {
+  color: var(--third);
+}
+.hero-wrapper :not(.btn-check) + .btn:active {
+  color: var(--third);
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  letter-spacing: 3px;
+}
+.hero-wrapper :not(.btn-check) + .btn:active a {
+  color: var(--third);
+}
+.hero-wrapper .vinyl-label {
+  background-color: var(--third);
+  height: 220px;
+  width: 220px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 5s infinite linear;
+  overflow-y: hidden;
+}
+.hero-wrapper .vinyl-label p {
+  color: var(--first);
+  font-family: "Yesteryear", cursive;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+.hero-wrapper .vinyl-label .black-dot {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--first);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-wrapper .vinyl-label .track-list {
+  padding: 25px;
+  margin-top: 10px;
+}
+.hero-wrapper .vinyl-label .track-list p {
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  letter-spacing: 0px;
+}
+.hero-wrapper .vinyl-label .track-list p .song-duration {
+  font-weight: 600;
+}
+.hero-wrapper .left-section {
+  background-color: var(--first);
+}
+.hero-wrapper .left-section h1 {
+  color: var(--third);
+  font-size: 80px;
+  overflow-y: hidden;
+}
+.hero-wrapper .left-section h1 span {
+  color: var(--secondary);
+}
+.hero-wrapper .left-section h2 {
+  color: var(--third);
+  font-size: 60px;
+  overflow-y: hidden;
+}
+
+.about-me-section {
+  height: auto;
+  background-color: var(--first);
+  color: var(--third) !important;
+}
+.about-me-section h1 {
+  border-bottom: 2px solid var(--secondary);
+  letter-spacing: 1.5px;
+}
+.about-me-section h4 {
+  letter-spacing: 1.5px;
+  line-height: 2.5rem;
+}
+.about-me-section .skill-wrapper {
+  margin-top: 40px;
+}
+.about-me-section .skill-wrapper .card {
+  background-color: transparent;
+  border: none;
+}
+.about-me-section .skill-wrapper .card .card-body i {
+  font-size: 80px;
+}
+.about-me-section .skill-wrapper .card .card-body .fa-html5 {
+  color: #e34c26;
+}
+.about-me-section .skill-wrapper .card .card-body .fa-sass {
+  color: #CD6799;
+}
+.about-me-section .skill-wrapper .card .card-body .fa-bootstrap {
+  color: #563d7c;
+}
+.about-me-section .skill-wrapper .card .card-body .fa-js {
+  color: #F0DB4F;
+}
+.about-me-section .skill-wrapper .card .card-body .fa-wordpress {
+  color: #00749C;
+}
+.about-me-section .skill-wrapper .card .card-body .fa-css3-alt {
+  color: #264de4;
+}
+
+.passion-section {
+  background-color: var(--first);
+  color: var(--third) !important;
+  padding-top: 150px;
+  height: auto;
+}
+.passion-section h4 {
+  letter-spacing: 1.5px;
+  line-height: 2.5rem;
+}
+.passion-section h1 {
+  border-bottom: 2px solid var(--secondary);
+  letter-spacing: 1.5px;
+}
+.passion-section .carousel {
+  border-radius: 20px;
+  border: 2px solid var(--third);
+}
+.passion-section .carousel .carousel-inner {
+  max-height: 400px;
+}
+.passion-section .carousel .carousel-inner .carousel-item img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: top;
+     object-position: top;
+}
+.passion-section .carousel .carousel-inner .carousel-item .shadow-photo {
+  background-color: rgba(152, 70, 95, 0.3137254902);
+  z-index: 3000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-wrapper {
+  background-color: var(--first);
+  color: var(--third) !important;
+  padding-top: 150px;
+  height: auto;
+}
+.contact-wrapper h4 {
+  letter-spacing: 1.5px;
+  line-height: 2.5rem;
+}
+.contact-wrapper h1 {
+  border-bottom: 2px solid var(--secondary);
+  letter-spacing: 1.5px;
+}
+.contact-wrapper .icon-wrapper i {
+  font-size: 24px;
+  color: var(--third);
+  transition: 0.4s;
+  margin-right: 5px;
+  padding: 5px;
+}
+.contact-wrapper .icon-wrapper .fa-linkedin:hover {
+  color: #0e76a8;
+  transform: scale(1.1);
+}
+.contact-wrapper .icon-wrapper .fa-at:hover {
+  color: #e34c26;
+  transform: scale(1.1);
+}
+.contact-wrapper .icon-wrapper .fa-phone:hover {
+  color: royalblue;
+  transform: scale(1.1);
+}
+
+.footer-section {
+  background-color: var(--first);
+  color: var(--third) !important;
+  height: auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
