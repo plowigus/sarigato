@@ -18,6 +18,7 @@
 body {
   min-height: 100vh;
   min-width: 100vw;
+  background: var(--first) !important;
 }
 
 h1,
@@ -258,12 +259,38 @@ header .navbar-nav a.active {
   transform: scale(1.1);
 }
 
-.footer-section {
-  background-color: var(--first);
-  color: var(--third) !important;
-  height: auto;
+@media (max-width: 576px) {
+  h4 {
+    font-size: 18px !important;
+    line-height: 1.7rem !important;
+  }
+  .contact-wrapper {
+    padding-top: 75px;
+  }
+  .mobile-text {
+    color: var(--third);
+    text-align: center;
+  }
+  .mobile-text span {
+    color: var(--secondary);
+  }
+  .mobile-text2 {
+    font-size: 20px;
+    color: var(--third);
+  }
+  .carousel {
+    height: 260px !important;
+    margin-top: 20px;
+  }
+  .passion-section .carousel .carousel-inner {
+    max-height: 256px;
+  }
+  .phone-btn {
+    position: absolute;
+    bottom: 8%;
+    left: 25%;
+  }
 }
-
 @keyframes rotate {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
